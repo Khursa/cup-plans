@@ -1,0 +1,80 @@
+@font-face {
+    font-family: 'latolight';
+    src: url('../fonts/lato-light/lato-light-webfont.woff2') format('woff2'),
+         url('../fonts/lato-light/lato-light-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+* {
+	box-sizing: border-box;
+}
+
+body {
+	background-color: #fdde7e;
+}
+
+p {
+	font-weight: 900;
+}
+
+.cp-flex {
+	display: flex;
+	max-width: 1140px;
+	margin: 50px auto;
+}
+
+.cp-item {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	align-items: center;
+	flex-grow: 1;
+	background-color: #fff;
+	border-radius: 2px;
+}
+
+.cp-gold {
+	min-height: 500px;
+	margin: 0 30px;
+}
+
+.cp-silver,
+.cp-bronze {
+	min-height: 444px;
+	margin: 30px 0;
+}
+
+.cp-item__price {
+	font-family: latolight, sant-serif;
+	font-size: 48px;
+	color: #02995b;
+}
+
+.cp-item__cup {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	z-index: 0;
+}
+
+.cp-item__cup::before {
+	content: '';
+	position: absolute;
+	width: 36px;
+	height: 45px;
+	background: url(../img/bean.png);
+	z-index: 1;
+}
+
+.cp-item__title {
+	font-family: latolight, sant-serif;
+	font-size: 26px;
+}
+
+.cp-item__text {
+	font-family: latolight, sant-serif;
+	font-size: 12px;
+	text-align: center;
+	line-height: 1.3em;
+}
